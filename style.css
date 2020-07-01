@@ -1,0 +1,86 @@
+body {
+    background: white;
+    color: white;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif, Hack;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: black;
+    background-image: url("images/goods.jpg");
+    background-size: 100%;
+    background-position: center;
+    padding: 20px;
+    height: 300px;
+    text-align: center;
+}   
+
+header a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+header .logo a {
+    background-image: url("images/logo.jpg");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    text-indent: -99999px;
+    top: -30px;
+    height: 80px;
+    width: 300px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 20px 0 0;
+}
+
+.features {
+    background: white;
+    color: rgb(66, 66, 66);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    
+}   
+
+.features figure {
+    margin: auto;
+    width :240px;
+}
+
+.features figure img {
+    border: 1px solid rgb(226, 225, 225);
+    border-radius: 30px;
+    box-shadow: gray 0 0 10px;
+    width: 240px;
+    height: 180px;
+}
+
+.features figure figcaption {
+    margin-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+footer {
+    background: black;
+    color: gray;
+    font-size: 15px;
+    padding: 20px 20px;
+    text-align: center;
+} 

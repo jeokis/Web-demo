@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif, Hack;               
+        }
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            display: inline-block;
+            background-color: gray;
+            border-radius: 3px;
+            padding: 2px;
+            margin-left: 20px;
+        }
+
+        li:first-child {
+            margin-left: 0;
+        }
+
+        li:hover {
+            background-color: red;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .feature-box {
+            display:flex;
+        }
+
+        .feature-box div {
+            width: 100%;
+            margin: 1px;
+        }
+
+        .feature-box.sales div {
+            background: gray;
+           
+        }
+
+        .feature-box.closeouts div {
+            background: red;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
+    </ul>
+    <section class="feature-box sales">
+        <div>a</div>
+        <div>b</div>
+        <div>c</div>
+    </section>
+    <section class="feature-box closeouts">
+        <div>d</div>
+        <div>e</div>
+    </section>
+</body>
+</html>
