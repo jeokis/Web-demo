@@ -5,6 +5,9 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/*header*/
+
 header {
     background: black;
     background-image: url("images/goods.jpg");
@@ -24,6 +27,10 @@ header a {
 
 header a:hover {
     text-decoration: underline;
+}
+
+header .mobile {
+    display: none;/*目前不显示.mobile类型下的内容*/
 }
 
 header .logo a {
@@ -49,13 +56,29 @@ nav li {
     margin: 0 20px 0 0;
 }
 
+/*RESPONSIVE RULES*/
+@media screen and (max-width: 722px) {
+    header {
+        height: 200px;
+    }
+    header .mobile {
+        display: inline-block;/*设置限制条件后显示mobile类内容*/
+    }
+
+    header .desktop {
+        display: none;/*设置限制条件后不显示desktop类内容*/
+    }
+}
+
+/*features*/
+
 .features {
     background: white;
     color: rgb(66, 66, 66);
     padding: 20px;
     display: flex;
     flex-direction: row;
-    
+    flex-wrap: wrap;
 }   
 
 .features figure {
@@ -76,6 +99,15 @@ nav li {
     text-align: center;
     text-transform: uppercase;
 }
+
+/*RESPONSIVE RULES
+@media screen and (max-width: 722px) {
+    .features {
+        display: block;
+    }
+}*/
+
+/*footer*/
 
 footer {
     background: black;
